@@ -1,0 +1,65 @@
+.intro {
+  background-color: white;
+  padding: 16px;
+  padding-bottom: 32px;
+}
+
+.banner {
+  width: 100%;
+  padding-top: 92px;
+  padding-bottom: 16px;
+}
+
+.courses {
+  background-color: #396F48;
+  padding: 48px 8px;
+}
+.excel-courses {
+  display: flex;
+}
+
+.course {
+  position: relative;
+  flex: 1;
+  background-color: white;
+  padding: 16px;
+  padding-bottom: 32px;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.3);
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.course-link {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 16px;
+  text-decoration: underline;
+}
+
+.instructors {
+  padding-top: 32px;
+}
+
+.instructor {
+  position: relative;
+  display: flex;
+  padding: 16px;
+}
+
+.instructor-photo {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  margin-right: 16px;
+  border-radius: 46px;
+  background-color: rgba(0,0,0,0.1);
+  background-size: 92px;
+}
+.sandra { background-image: url('../images/sandra.jpg'); }
+.dieter { background-image: url('../images/dieter.jpg'); }
+
+.instructor-description {
+  position: relative;
+  flex: 1;
+}
