@@ -11,7 +11,7 @@
 }
 
 .courses {
-  background-color: #396F48;
+  background-color: #60BD7A;
   padding: 48px 8px;
 }
 .excel-courses {
@@ -34,7 +34,6 @@
   position: absolute;
   bottom: 0;
   padding-bottom: 16px;
-  text-decoration: underline;
 }
 
 .instructors {
