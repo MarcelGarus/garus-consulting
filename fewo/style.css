@@ -78,6 +78,15 @@ li {
   height: 200px;
 }
 
+.imagges {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.imagges > img {
+  height: 400px;
+}
 .contact {
   position: relative;
   padding: 32px 0;
