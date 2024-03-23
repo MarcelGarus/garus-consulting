@@ -177,18 +177,22 @@
   </div>
 
   <!-- <object data="Belegungsplan.pdf" width="100%" height="500"></object> -->
-  <div class="images"> 
+  </div>
   <script>
     function resizePlan() {
+      console.log("resizing plan");
       const plan = document.getElementById("plan");
-      plan.height = plan.contentWindow.document.body.height;
+      const doc = plan.contentDocument || iframe.contentWindow.document;
+      console.log(doc);
+      plan.height = doc.body.scrollHeight + 5;
+      plan.width = doc.body.scrollWidth + 5;
     }
   </script>
-  <iframe src="Plan.htm" id ="plan"
-    style="width: 100%; height: 800px; border: none;"
-    onload="resizePlan()"
-  ></iframe>
+  <center>
+    <iframe src="Plan.htm" id ="plan" style="border: none;" width="100%" height="800" onload="resizePlan()"></iframe>
+  </center>
   </div>
+  <div class="width-limited-content">
   
     <h2 id="ausflug">Ausflugsziele</h2>  
     <p>
