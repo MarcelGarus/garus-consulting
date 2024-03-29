@@ -177,36 +177,39 @@
   </div>
 
   <!-- <object data="Belegungsplan.pdf" width="100%" height="500"></object> -->
-  </div>
+  <div class="images"> 
   <script>
     function resizePlan() {
-      console.log("resizing plan");
       const plan = document.getElementById("plan");
-      const doc = plan.contentDocument || iframe.contentWindow.document;
-      console.log(doc);
-      plan.height = doc.body.scrollHeight + 5;
-      plan.width = doc.body.scrollWidth + 5;
+      plan.height = plan.contentWindow.document.body.height;
     }
   </script>
-  <center>
-    <iframe src="Plan.htm" id ="plan" style="border: none;" width="100%" height="800" onload="resizePlan()"></iframe>
-  </center>
+  <iframe src="Plan.htm" id ="plan"
+    style="width: 100%; height: 800px; border: none;"
+    onload="resizePlan()"
+  ></iframe>
   </div>
-  <div class="width-limited-content">
   
     <h2 id="ausflug">Ausflugsziele</h2>  
     <p>
-    <b >Nerja, Cueva de Nerja, Malaga und Frigiliana</b>
+    <b >Nerja und Cueva de Nerja</b>
     <div class="images"> 
       <img src="images/nerja1.jpg">
       <img src="images/nerja2.jpg">
       <img src="images/nerja3.jpg">
       <img src="images/cueva-nerja.jpg">
       <img src="images/cueva-nerja2.jpg">
+      <img src="images/nerja-cueva3.jpg">
       <img src="images/cueva-nerja3.jpg">
-      <img src="images/malaga.jpg">
+    </div>
+    <b >Frigiliana, Competa und Malaga</b>
+      <div class="images"> 
+      <img src="images/frigiliana.jpg">
       <img src="images/wandern1.jpg">
       <img src="images/wandern2.jpg">
+      <img src="images/competa01.jpg">
+      <img src="images/competa02.jpg">
+      <img src="images/malaga.jpg">
 
     </div>
 
