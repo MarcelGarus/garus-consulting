@@ -157,7 +157,7 @@
       <img src="images/drohne-kunst.jpg">
       
     </div>
-    <h2 id="preise">Preise 2025 sowie Konditionen</h2>
+    <h2 id="preise">Preise 2025 und 2026 sowie Konditionen</h2>
     <p>
       <ul>
         <li>Übernachtungskosten für 2 Personen 45&nbsp;€/Nacht</li>
@@ -186,12 +186,26 @@
     function resizePlan() {
       const plan = document.getElementById("plan");
       plan.height = plan.contentWindow.document.body.height;
+      const planN = document.getElementById("planN");
+      planN.height = plan.contentWindow.document.body.height;
     }
   </script>
+
+  <!-- Das ist der Plan vom aktuellen Jahr. -->
   <iframe src="Plan.htm" id ="plan"
+  style="width: 100%; height: 800px; border: none;"
+  onload="resizePlan()"
+  ></iframe>
+
+
+  <!-- Das ist der Plan vom nächsten Jahr. -->
+  <iframe src="PlanN.htm" id ="planN"
     style="width: 100%; height: 800px; border: none;"
     onload="resizePlan()"
   ></iframe>
+  
+
+
   </div>
   
     <h2 id="ausflug">Ausflugsziele</h2>  
